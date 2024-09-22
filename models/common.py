@@ -456,7 +456,7 @@ class Concat(nn.Module):
         return torch.cat(x, self.d)
 
 
-class DetectMultiBackend(nn.Module):
+class Load(nn.Module):
     """YOLOv5 MultiBackend class for inference on various backends including PyTorch, ONNX, TensorRT, and more."""
 
     def __init__(self, weights="yolov5s.pt", device=torch.device("cpu"), dnn=False, data=None, fp16=False, fuse=True):
